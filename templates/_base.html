@@ -1,0 +1,24 @@
+{% load static %}         
+{% comment %} #모든 페이지에서스테틱을 불러온다는 선언 {% endcomment %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타트업 스쿨 Django</title>
+    <link rel = "stylesheet" href = "{% static 'css/custom.css'%}"/>
+</head>
+
+<body>
+
+<a href="{% url 'home' %}"> 홈으로</a>
+<a href="{% url 'articles' %}"> 글목록</a>
+<a href ="{% url 'terms' %}">약관보기</a>
+<a href="{% url 'location' %}">위치</a>
+
+{% block content %}  {% endblock content %}
+   
+</body>
+
+</html>
