@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY') #이시스템의 환경변수를 가�
 DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = ["*"]  #어느 호스트에서 접속하는걸 허용할 것인지.
-CSRF_TRUSTED_ORIGINS = ["http://*.cloudtype.app"]   #나로 위장해서 들어오는걸 막기위함
+CSRF_TRUSTED_ORIGINS = ["https://*.cloudtype.app"]   #나로 위장해서 들어오는걸 막기위함
 
 # Application definition
 
